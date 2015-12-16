@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RGAuth\SwaggerClient
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -31,18 +31,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RGAuth\SwaggerClient\Api;
 
-use \Swagger\Client\Configuration;
-use \Swagger\Client\ApiClient;
-use \Swagger\Client\ApiException;
-use \Swagger\Client\ObjectSerializer;
+use \RGAuth\SwaggerClient\Configuration;
+use \RGAuth\SwaggerClient\ApiClient;
+use \RGAuth\SwaggerClient\ApiException;
+use \RGAuth\SwaggerClient\ObjectSerializer;
 
 /**
  * DocumentsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RGAuth\SwaggerClient
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -52,13 +52,13 @@ class DocumentsApi
 
     /**
      * API Client
-     * @var \Swagger\Client\ApiClient instance of the ApiClient
+     * @var \RGAuth\SwaggerClient\ApiClient instance of the ApiClient
      */
     protected $apiClient;
   
     /**
      * Constructor
-     * @param \Swagger\Client\ApiClient|null $apiClient The api client to use
+     * @param \RGAuth\SwaggerClient\ApiClient|null $apiClient The api client to use
      */
     function __construct($apiClient = null)
     {
@@ -72,7 +72,7 @@ class DocumentsApi
   
     /**
      * Get API client
-     * @return \Swagger\Client\ApiClient get the API client
+     * @return \RGAuth\SwaggerClient\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -81,7 +81,7 @@ class DocumentsApi
   
     /**
      * Set the API client
-     * @param \Swagger\Client\ApiClient $apiClient set the API client
+     * @param \RGAuth\SwaggerClient\ApiClient $apiClient set the API client
      * @return DocumentsApi
      */
     public function setApiClient(ApiClient $apiClient)
@@ -98,7 +98,7 @@ class DocumentsApi
      *
      * @param string $access_token access token generated after user login (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1AccountsShow($access_token)
     {
@@ -165,7 +165,7 @@ class DocumentsApi
      * @param string $account_name name (optional)
      * @param string $account_email email (optional)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1AccountsUpdate($access_token, $account_name=null, $account_email=null)
     {
@@ -237,7 +237,7 @@ class DocumentsApi
      * @param string $account_email email (required)
      * @param string $account_password password (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1AccountsCreate($account_email, $account_password)
     {
@@ -309,7 +309,7 @@ class DocumentsApi
      *
      * @param string $access_token access token generated after user login (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1AccountsDelete($access_token)
     {
@@ -374,7 +374,7 @@ class DocumentsApi
      *
      * @param string $activation_code activation code to activate user account (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1AccountsActivate($activation_code)
     {
@@ -441,7 +441,7 @@ class DocumentsApi
      * @param string $per_page Get orders per_page (optional)
      * @param string $page Get orders for a page (optional)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1ShippingAddressIndex($access_token, $per_page=null, $page=null)
     {
@@ -520,7 +520,7 @@ class DocumentsApi
      * @param string $phone phone (required)
      * @param string $street_2 street address 2 (optional)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1ShippingAddressCreate($access_token, $name, $street_1, $city, $state, $country, $zip, $phone, $street_2=null)
     {
@@ -638,7 +638,7 @@ class DocumentsApi
      * @param string $access_token Access Token for the account (required)
      * @param string $id get shipping address (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1ShippingAddressShow($access_token, $id)
     {
@@ -722,7 +722,7 @@ class DocumentsApi
      * @param string $phone phone (required)
      * @param string $street_2 street address 2 (optional)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1ShippingAddressUpdate($access_token, $id, $street_1, $city, $state, $country, $zip, $phone, $street_2=null)
     {
@@ -844,7 +844,7 @@ class DocumentsApi
      * @param string $access_token Access Token for the Account (required)
      * @param string $id delete shipping address (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1ShippingAddressDestroy($access_token, $id)
     {
@@ -922,7 +922,7 @@ class DocumentsApi
      * @param string $account_original_password password (required)
      * @param string $account_password password (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1AccountsUpdatePassword($access_token, $account_original_password, $account_password)
     {
@@ -1002,7 +1002,7 @@ class DocumentsApi
      * @param string $session_email email (required)
      * @param string $session_password password (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1AccountSessionsIndex($session_email, $session_password)
     {
@@ -1074,7 +1074,7 @@ class DocumentsApi
      *
      * @param string $email email (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1PasswordRecoverIndex($email)
     {
@@ -1140,7 +1140,7 @@ class DocumentsApi
      * @param string $token reset password token (required)
      * @param string $password New Password (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1PasswordRecoverPut($token, $password)
     {

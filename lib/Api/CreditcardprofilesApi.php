@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RGAuth\SwaggerClient
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -31,18 +31,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RGAuth\SwaggerClient\Api;
 
-use \Swagger\Client\Configuration;
-use \Swagger\Client\ApiClient;
-use \Swagger\Client\ApiException;
-use \Swagger\Client\ObjectSerializer;
+use \RGAuth\SwaggerClient\Configuration;
+use \RGAuth\SwaggerClient\ApiClient;
+use \RGAuth\SwaggerClient\ApiException;
+use \RGAuth\SwaggerClient\ObjectSerializer;
 
 /**
  * CreditcardprofilesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RGAuth\SwaggerClient
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -52,13 +52,13 @@ class CreditcardprofilesApi
 
     /**
      * API Client
-     * @var \Swagger\Client\ApiClient instance of the ApiClient
+     * @var \RGAuth\SwaggerClient\ApiClient instance of the ApiClient
      */
     protected $apiClient;
   
     /**
      * Constructor
-     * @param \Swagger\Client\ApiClient|null $apiClient The api client to use
+     * @param \RGAuth\SwaggerClient\ApiClient|null $apiClient The api client to use
      */
     function __construct($apiClient = null)
     {
@@ -72,7 +72,7 @@ class CreditcardprofilesApi
   
     /**
      * Get API client
-     * @return \Swagger\Client\ApiClient get the API client
+     * @return \RGAuth\SwaggerClient\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -81,7 +81,7 @@ class CreditcardprofilesApi
   
     /**
      * Set the API client
-     * @param \Swagger\Client\ApiClient $apiClient set the API client
+     * @param \RGAuth\SwaggerClient\ApiClient $apiClient set the API client
      * @return CreditcardprofilesApi
      */
     public function setApiClient(ApiClient $apiClient)
@@ -100,7 +100,7 @@ class CreditcardprofilesApi
      * @param string $per_page Get orders per_page (optional)
      * @param string $page Get orders for a page (optional)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1CreditCardProfilesIndex($access_token, $per_page=null, $page=null)
     {
@@ -183,7 +183,7 @@ class CreditcardprofilesApi
      * @param string $phone phone (required)
      * @param string $street_2 street address 2 (optional)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1CreditCardProfilesCreate($access_token, $token, $card_type, $masked_number, $expiration_date, $name, $street_1, $city, $state, $country, $zip, $phone, $street_2=null)
     {
@@ -329,7 +329,7 @@ class CreditcardprofilesApi
      * @param string $access_token Get credit card profiles for the user (required)
      * @param string $id Get credit card profiles for the user (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1CreditCardProfilesShow($access_token, $id)
     {
@@ -418,7 +418,7 @@ class CreditcardprofilesApi
      * @param string $phone phone (required)
      * @param string $street_2 street address 2 (optional)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1CreditCardProfilesUpdate($access_token, $id, $token, $card_type, $masked_number, $expiration_date, $name, $street_1, $city, $state, $country, $zip, $phone, $street_2=null)
     {
@@ -575,7 +575,7 @@ class CreditcardprofilesApi
      * @param string $access_token delete credit card profiles for the user (required)
      * @param string $id delete credit card profiles for the user (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1CreditCardProfilesDestroy($access_token, $id)
     {

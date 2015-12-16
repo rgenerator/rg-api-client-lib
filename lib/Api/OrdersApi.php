@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RGAuth\SwaggerClient
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -31,18 +31,18 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RGAuth\SwaggerClient\Api;
 
-use \Swagger\Client\Configuration;
-use \Swagger\Client\ApiClient;
-use \Swagger\Client\ApiException;
-use \Swagger\Client\ObjectSerializer;
+use \RGAuth\SwaggerClient\Configuration;
+use \RGAuth\SwaggerClient\ApiClient;
+use \RGAuth\SwaggerClient\ApiException;
+use \RGAuth\SwaggerClient\ObjectSerializer;
 
 /**
  * OrdersApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RGAuth\SwaggerClient
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -52,13 +52,13 @@ class OrdersApi
 
     /**
      * API Client
-     * @var \Swagger\Client\ApiClient instance of the ApiClient
+     * @var \RGAuth\SwaggerClient\ApiClient instance of the ApiClient
      */
     protected $apiClient;
   
     /**
      * Constructor
-     * @param \Swagger\Client\ApiClient|null $apiClient The api client to use
+     * @param \RGAuth\SwaggerClient\ApiClient|null $apiClient The api client to use
      */
     function __construct($apiClient = null)
     {
@@ -72,7 +72,7 @@ class OrdersApi
   
     /**
      * Get API client
-     * @return \Swagger\Client\ApiClient get the API client
+     * @return \RGAuth\SwaggerClient\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -81,7 +81,7 @@ class OrdersApi
   
     /**
      * Set the API client
-     * @param \Swagger\Client\ApiClient $apiClient set the API client
+     * @param \RGAuth\SwaggerClient\ApiClient $apiClient set the API client
      * @return OrdersApi
      */
     public function setApiClient(ApiClient $apiClient)
@@ -100,7 +100,7 @@ class OrdersApi
      * @param string $per_page Get orders per_page (optional)
      * @param string $page Get orders for a page (optional)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1OrdersIndex($access_token, $per_page=null, $page=null)
     {
@@ -172,7 +172,7 @@ class OrdersApi
      * @param string $access_token Get orders for the user (required)
      * @param string $id Get orders for that account (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RGAuth\SwaggerClient\ApiException on non-2xx response
      */
     public function v1OrdersIndex_1($access_token, $id)
     {
